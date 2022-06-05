@@ -70,18 +70,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 #header h1 a, #header h1 a:hover {
-  color: rgb(2, 166, 60);
+  color: rgb(56, 37, 33);
   line-height: 1;
   display: inline-block;
 }
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(2, 166, 60, 0.8);
+  color: rgb(56, 37, 33);
 }
 #header h2 span {
-  color: #02a63c;
-  border-bottom: 2px solid #18d26e;
+  color: rgb(56, 37, 33);
+  border-bottom: 2px solid rgb(56, 37, 33);
   padding-bottom: 6px;
 }
 #header img {
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  color: #02a63c;
+  color: rgb(56, 37, 33);
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(126, 251, 134, 0.25)
+  background: #3825214d
 }
 #header.header-top .social-links, #header.header-top h2 {
   display: none;
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(2, 166, 60, 0.7);
+  color: rgb(56, 37, 33);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -215,14 +215,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 25px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #006c26;
+  color: rgb(56, 37, 33);
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: rgb(56, 37, 33);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -243,13 +243,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .navbar-mobile {
-  position: fixed;
+  position: fixed !important;
   overflow: hidden;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: #382521ee;
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -277,9 +277,12 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile li + li {
   margin: 0;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a, .navbar-mobile a:hover, .navbar-mobile a:focus {
   font-size: 16px;
   position: relative;
+}
+.navbar-mobile a, .navbar-mobile a:hover, .navbar-mobile a:focus {
+  color: #fff !important;
 }
 
 /*--------------------------------------------------------------
@@ -302,7 +305,7 @@ section.section-show {
   padding-bottom: 45px;
 }
 section .container {
-  background: rgba(126, 251, 134, 0.85);
+  background: #382521;
   padding: 30px;
 }
 @media (max-width: 768px) {
@@ -336,9 +339,8 @@ section .container {
 .section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
@@ -371,6 +373,10 @@ section .container {
 }
 .about-me .content p:last-child {
   margin-bottom: 0;
+}
+
+.about-me h3 a, .about-me h3 a:hover{
+  color: #18d26e;
 }
 
 /*--------------------------------------------------------------
@@ -451,8 +457,7 @@ section .container {
   flex-direction: column;
   align-items: left;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.3);
-  transition: ease-in-out 0.3s;
+  background: #fff;
 }
 .interests .icon-box i {
   font-size: 32px;
@@ -465,10 +470,7 @@ section .container {
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  color: #a9ada9;
-}
-.interests .icon-box:hover {
-  background: rgba(255, 255, 255, 0.12);
+  color: rgb(56, 37, 33);
 }
 
 /*--------------------------------------------------------------
@@ -870,7 +872,7 @@ section .container {
   color: #444444;
   padding: 20px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  background: #fff;
 }
 .contact .info-box i.bx {
   font-size: 24px;
@@ -882,13 +884,13 @@ section .container {
 }
 .contact .info-box h3 {
   font-size: 20px;
-  color: #a9ada9;
+  color: rgb(56, 37, 33);
   font-weight: 700;
   margin: 10px 0 8px 30px;
 }
 .contact .info-box p {
   padding: 0;
-  color: #a9ada9;
+  color: #18d26e;
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 30px;

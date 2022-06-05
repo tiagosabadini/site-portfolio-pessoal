@@ -23,23 +23,23 @@ const Contact = () => {
 
         <div className="col-md-6 d-flex align-items-stretch">
           <div className="info-box">
-            <MapFill size="30" color="#a9ada9" />
+            <MapFill size="30" color="#18d26e" />
             <div>
               <h3>My Address</h3>
-              <p style={{color: '#5578ff'}}>A108 Adam Street, New York, NY 535022</p>
+              <p>A108 Adam Street, New York, NY 535022</p>
             </div>
           </div>
         </div>
 
         <div className="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
           <div className="info-box">
-            <ShareFill size="30" color="#a9ada9" />
+            <ShareFill size="30" color="#18d26e" />
             <div>
               <h3>Social Profiles</h3>
               <div className="social-links">
-                <a href="#" className="instagram"><Instagram color="#5578ff" /></a>
-                <a href="#" className="twitter"><Medium color="#5578ff" /></a>
-                <a href="#" className="linkedin"><Linkedin color="#5578ff" /></a>
+                <a href="#" className="instagram"><Instagram color="#18d26e" /></a>
+                <a href="#" className="twitter"><Medium color="#18d26e" /></a>
+                <a href="#" className="linkedin"><Linkedin color="#18d26e" /></a>
               </div>
             </div>
           </div>
@@ -47,19 +47,19 @@ const Contact = () => {
 
         <div className="col-md-6 mt-4 d-flex align-items-stretch">
           <div className="info-box">
-            <EnvelopeCheckFill size="30" color="#a9ada9" />
+            <EnvelopeCheckFill size="30" color="#18d26e" />
             <div>
               <h3>Email Me</h3>
-              <p style={{color: '#5578ff'}}>contact@example.com</p>
+              <p>contact@example.com</p>
             </div>
           </div>
         </div>
         <div className="col-md-6 mt-4 d-flex align-items-stretch">
           <div className="info-box">
-            <PhoneFill size="30" color="#a9ada9" />
+            <PhoneFill size="30" color="#18d26e" />
             <div>
               <h3>Call Me</h3>
-              <p style={{color: '#5578ff'}}>+1 5589 55488 55</p>
+              <p>+1 5589 55488 55</p>
             </div>
           </div>
         </div>

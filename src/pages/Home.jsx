@@ -2,7 +2,7 @@ import {Outlet, Link} from 'react-router-dom';
 import {useEffect, useState} from 'react';
 
 //Componentes
-import {List, Instagram, Linkedin, Medium} from 'react-bootstrap-icons';
+import {List, Instagram, Linkedin, Medium, X} from 'react-bootstrap-icons';
 
 
 const Home = () => {
@@ -28,6 +28,12 @@ const Home = () => {
     event.target.classList.add('active');    
   }
 
+  const handleToggleNavbar = (e) => {
+    document.getElementById("navbar").classList.toggle('navbar-mobile');
+    document.getElementsByClassName('menu-close-navbar-mobile')[0].classList.toggle('d-none');
+    document.getElementsByClassName('menu-list-navbar-mobile')[0].classList.toggle('d-none');
+  }
+
   return (
     <>
       <header id="header" className={headerTop}>
@@ -42,13 +48,25 @@ const Home = () => {
               <li><Link id="to-portfolio" to="/portfolio" onClick={(e) => handleClick(e)} className="nav-link">Portfolio</Link></li>
               <li><Link id="to-contact" to="/contact" onClick={(e) => handleClick(e)} className="nav-link">Contact</Link></li>
             </ul>
-            <List className="mobile-nav-toggle" />
+            <List className="mobile-nav-toggle menu-list-navbar-mobile" onClick={(e) => handleToggleNavbar(e)}/>
+            <X className="mobile-nav-toggle menu-close-navbar-mobile d-none" size="35" onClick={(e) => handleToggleNavbar(e)} />
           </nav>
 
           <div className="social-links">
-            <a href="#" className="instagram"><Instagram /></a>
-            <a href="#" className="twitter"><Medium /></a>
-            <a href="#" className="linkedin"><Linkedin /></a>
+            <a href="https://www.linkedin.com/in/tiago-sabadini/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="linkedin"><Linkedin /></a>
+
+            <a href="tiagosabadini.medium.com/"
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="medium"><Medium /></a>
+
+            <a href="https://www.instagram.com/tiagosabadini/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="instagram"><Instagram /></a>
           </div>
         </div>
       </header>
